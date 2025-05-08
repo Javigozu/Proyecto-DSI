@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles.uss?fileID=7433441132597879392&amp;guid=f2f4a0695e2968a45b59062cca2d0612&amp;type=3#Styles" />
+    <ui:VisualElement name="iArrows" class="item" />
+    <ui:Label tabindex="-1" text="Armadura" parse-escape-sequences="true" display-tooltip-when-elided="true" name="item-label" style="-unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); font-size: 25px; color: rgb(118, 53, 24); display: flex; align-self: center; height: 26px;" />
+</ui:UXML>

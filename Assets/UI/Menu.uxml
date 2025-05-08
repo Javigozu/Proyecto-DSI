@@ -1,0 +1,82 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/Styles.uss?fileID=7433441132597879392&amp;guid=f2f4a0695e2968a45b59062cca2d0612&amp;type=3#Styles" />
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:VisualElement name="pestanyas" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="pest-inv" class="pest-border pest-inv" style="background-color: rgb(240, 140, 140);">
+                <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Inventory" class="pest-text" />
+            </ui:VisualElement>
+            <ui:VisualElement name="pest-stats" class="pest-border pest-stats" style="background-color: rgb(191, 212, 229);">
+                <ui:Label tabindex="-1" text="Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Stats" class="pest-text" />
+            </ui:VisualElement>
+            <ui:VisualElement name="pest-map" class="pest-border pest-map" style="background-color: rgb(204, 229, 168);">
+                <ui:Label tabindex="-1" text="Map" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Map" class="pest-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="cont-inv" style="height: 75%; background-color: rgb(238, 203, 153); border-left-color: rgb(118, 53, 24); border-right-color: rgb(118, 53, 24); border-bottom-color: rgb(118, 53, 24); border-right-width: 7px; border-bottom-width: 7px; border-left-width: 7px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; flex-grow: 1; display: flex;">
+            <ui:Label tabindex="-1" text="&lt;u&gt;Backpack" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Backpack" class="title" />
+            <ui:VisualElement name="inventory" class="inventory" style="display: flex;">
+                <ui:VisualElement name="item" class="item-frame">
+                    <ui:VisualElement name="armadura" class="item" />
+                    <ui:Label tabindex="-1" text="Armadura" parse-escape-sequences="true" display-tooltip-when-elided="true" name="item-label" style="-unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); font-size: 25px; color: rgb(118, 53, 24); display: flex; align-self: center; height: 26px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="item" class="item-frame">
+                    <ui:VisualElement name="escudo" class="item" />
+                    <ui:Label tabindex="-1" text="Escudo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="item-label" style="-unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); font-size: 25px; color: rgb(118, 53, 24); display: flex; align-self: center; height: 26px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="item" class="item-frame">
+                    <ui:VisualElement name="espada" class="item" />
+                    <ui:Label tabindex="-1" text="Espada" parse-escape-sequences="true" display-tooltip-when-elided="true" name="item-label" style="-unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); font-size: 25px; color: rgb(118, 53, 24); display: flex; align-self: center; height: 26px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="&lt;u&gt;Shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Shop" class="title" />
+            <ui:VisualElement name="buttons-inv" style="flex-grow: 1; flex-direction: row; align-items: center; height: 0; justify-content: center;">
+                <ui:Button text="Potion       65" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn-poti" class="button-inv" style="-unity-text-align: middle-left;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" text="Arrows      16" name="btn-arrow" class="button-inv" style="display: flex;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" text="Beer            32" name="btn-beer" class="button-inv" style="display: flex;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="cont-stats" style="background-color: rgb(238, 203, 153); border-left-color: rgb(118, 53, 24); border-right-color: rgb(118, 53, 24); border-bottom-color: rgb(118, 53, 24); border-right-width: 7px; border-bottom-width: 7px; border-left-width: 7px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; flex-grow: 1; flex-direction: column; height: 75%; display: none;">
+            <ui:VisualElement name="datos" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="&lt;u&gt;Level:&lt;/u&gt; 14&#10;&lt;u&gt;Gold:&lt;/u&gt; 1320&#10;&lt;u&gt;Stats:&lt;/u&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" style="-unity-paragraph-spacing: -75px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="XP" style="flex-grow: 1; width: 75%;">
+                    <ui:Label tabindex="-1" text="&lt;u&gt;XP" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
+                    <ui:ProgressBar value="230" high-value="600" style="margin-right: 40px; margin-left: 40px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stats" style="flex-grow: 1; height: 60%; flex-direction: row; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+                <ui:VisualElement name="nombres" style="flex-grow: 1; width: 10%;">
+                    <ui:Label tabindex="-1" text="Strength" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); margin-left: 75px; font-size: 30px; color: rgb(118, 53, 24); -unity-paragraph-spacing: 90px; flex-grow: 1; -unity-text-align: middle-left;" />
+                    <ui:Label tabindex="-1" text="Dexterity" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); margin-left: 75px; font-size: 30px; color: rgb(118, 53, 24); -unity-paragraph-spacing: 90px; flex-grow: 1; -unity-text-align: middle-left;" />
+                    <ui:Label tabindex="-1" text="Wisdom" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); margin-left: 75px; font-size: 30px; color: rgb(118, 53, 24); -unity-paragraph-spacing: 90px; flex-grow: 1; -unity-text-align: middle-left;" />
+                    <ui:Label tabindex="-1" text="Charisma" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); margin-left: 75px; font-size: 30px; color: rgb(118, 53, 24); -unity-paragraph-spacing: 90px; flex-grow: 1; -unity-text-align: middle-left;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="customControls" style="flex-grow: 1; width: 50%;">
+                    <CustomControl name="point1" class="control" />
+                    <CustomControl name="point2" class="control" />
+                    <CustomControl name="point3" class="control" />
+                    <CustomControl name="point4" class="control" />
+                </ui:VisualElement>
+                <ui:VisualElement name="upgrade" style="flex-grow: 1; width: 10%;">
+                    <ui:Button text="Upgrade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="upgrade1" class="button-stats" style="flex-grow: 1;" />
+                    <ui:Button text="Upgrade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="upgrade2" class="button-stats" style="flex-grow: 1;" />
+                    <ui:Button text="Upgrade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="upgrade3" class="button-stats" style="flex-grow: 1;" />
+                    <ui:Button text="Upgrade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="upgrade4" class="button-stats" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="cont-map" style="background-color: rgb(238, 203, 153); border-left-color: rgb(118, 53, 24); border-right-color: rgb(118, 53, 24); border-bottom-color: rgb(118, 53, 24); border-right-width: 7px; border-bottom-width: 7px; border-left-width: 7px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; flex-grow: 1; flex-direction: row; height: 75%; display: none;">
+            <ui:VisualElement name="map" style="width: 70%;">
+                <ui:Label tabindex="-1" text="&lt;u&gt;The Middle Earth Map" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MiddleEarth" class="title" style="font-size: 40%; display: flex;" />
+                <ui:ScrollView mode="VerticalAndHorizontal" name="scrollMap" style="margin-top: 5px; margin-right: 40px; margin-bottom: 40px; margin-left: 40px; border-left-color: rgb(118, 53, 24); border-right-color: rgb(118, 53, 24); border-top-color: rgb(118, 53, 24); border-bottom-color: rgb(118, 53, 24); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; justify-content: flex-start; flex-grow: 1; flex-shrink: 1;">
+                    <ui:VisualElement name="dragMap" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Images/middleEarth.jpg?fileID=2800000&amp;guid=8cbea0e452390eb42b83211690a661f4&amp;type=3#middleEarth&apos;); -unity-background-scale-mode: stretch-to-fill; flex-direction: column; flex-shrink: 0; min-height: 100%; min-width: 100%;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:VisualElement name="list" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="&lt;u&gt;Waypoints" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Waypoints" class="title" style="font-size: 40%;" />
+                <ui:Label tabindex="-1" text="- Hobbiton&#10;- Bree&#10;- Rivendel&#10;- Moria&#10;- Lonely Mountain" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Waypoints" style="font-size: 30%; -unity-font: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&amp;guid=150c56dd5091f1640aaa683853f8f1ce&amp;type=3#InknutAntiqua-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&amp;guid=dede5090cff236a40bb22be4ba49ff36&amp;type=2#InknutAntiqua-Regular SDF 1&apos;); -unity-paragraph-spacing: -80px; color: rgb(118, 53, 24); margin-left: 60px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

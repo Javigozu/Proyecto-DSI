@@ -1,0 +1,213 @@
+.pest-border {
+    flex-grow: 1;
+    border-left-color: rgb(118, 53, 24);
+    border-right-color: rgb(118, 53, 24);
+    border-top-color: rgb(118, 53, 24);
+    border-bottom-color: rgb(118, 53, 24);
+    border-top-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 7px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    justify-content: center;
+    align-self: auto;
+    align-items: center;
+    flex-shrink: 0;
+    width: 0;
+}
+
+.pest-text {
+    -unity-text-align: middle-center;
+    -unity-font: url('project://database/Assets/Fonts/InknutAntiqua-Bold.ttf?fileID=12800000&guid=6edfa049d13d41043b213a6fc52b639b&type=3#InknutAntiqua-Bold');
+    -unity-font-definition: url('project://database/Assets/Fonts/InknutAntiqua-Bold%20SDF%201.asset?fileID=11400000&guid=20b74055f2e7e5c4aab3eb99f4bd6700&type=2#InknutAntiqua-Bold SDF 1');
+    color: rgb(118, 53, 24);
+    height: 20px;
+    font-size: 40px;
+}
+
+.pest-text:hover {
+    scale: 1.2 1.2;
+    rotate: -2deg;
+}
+
+.title {
+    -unity-font: url('project://database/Assets/Fonts/InknutAntiqua-Bold.ttf?fileID=12800000&guid=6edfa049d13d41043b213a6fc52b639b&type=3#InknutAntiqua-Bold');
+    -unity-font-definition: url('project://database/Assets/Fonts/InknutAntiqua-Bold%20SDF%201.asset?fileID=11400000&guid=20b74055f2e7e5c4aab3eb99f4bd6700&type=2#InknutAntiqua-Bold SDF 1');
+    color: rgb(118, 53, 24);
+    -unity-text-align: middle-left;
+    align-self: flex-start;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.inventory {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: auto;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    height: 40%;
+    border-left-color: rgb(118, 53, 24);
+    border-right-color: rgb(118, 53, 24);
+    border-top-color: rgb(118, 53, 24);
+    border-bottom-color: rgb(118, 53, 24);
+    border-top-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(243, 222, 194);
+}
+
+.item {
+    height: 80%;
+    width: 90%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.item-frame {
+    flex-grow: 0;
+    width: 15%;
+    height: 45%;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    align-self: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#armadura {
+    background-image: url('project://database/Assets/Images/armadura.png?fileID=2800000&guid=4aecfd627b7f3ba4f99190ed7a059dc8&type=3#armadura');
+}
+
+#escudo {
+    background-image: url('project://database/Assets/Images/escudo.png?fileID=2800000&guid=3d0e05f5650cbc54e82cfcb056dbe3f0&type=3#escudo');
+}
+
+#espada {
+    background-image: url('project://database/Assets/Images/pu%C3%B1al.png?fileID=2800000&guid=13677bb4d2f6b9546aaeaadb3742dace&type=3#puñal');
+}
+
+.button-inv {
+    flex-grow: 0;
+    display: flex;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-top: 0;
+    margin-right: 50px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    -unity-font: url('project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&guid=150c56dd5091f1640aaa683853f8f1ce&type=3#InknutAntiqua-Regular');
+    -unity-font-definition: url('project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&guid=dede5090cff236a40bb22be4ba49ff36&type=2#InknutAntiqua-Regular SDF 1');
+    font-size: 30px;
+    color: rgb(118, 53, 24);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Images/Boton.png?fileID=2800000&guid=4e025d0f717ef474cb093cd6fc971a75&type=3#Boton');
+    -unity-text-align: middle-left;
+    width: 25%;
+}
+
+.button-inv:hover {
+    background-image: url('project://database/Assets/Images/Hover.png?fileID=2800000&guid=db0ac6207e1dd3841bae0ed552ea540a&type=3#Hover');
+}
+
+.button-inv:active {
+    background-image: url('project://database/Assets/Images/Click.png?fileID=2800000&guid=2e952932d80f3c1498984dcdb8d8941f&type=3#Click');
+}
+
+#iPotion {
+    background-image: url('project://database/Assets/Images/poti.png?fileID=2800000&guid=1d97eb106eed2c14a92005215bafa58f&type=3#poti');
+}
+
+#iArrows {
+    background-image: url('project://database/Assets/Images/arrow.png?fileID=2800000&guid=b72836938d49c4c4d975c06aaf127f39&type=3#arrow');
+}
+
+#iBeer {
+    background-image: url('project://database/Assets/Images/beer.png?fileID=2800000&guid=a2429918f19170747919bcee1289c340&type=3#beer');
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(153, 117, 101);
+    border-left-color: rgb(118, 53, 24);
+    border-right-color: rgb(118, 53, 24);
+    border-top-color: rgb(118, 53, 24);
+    border-bottom-color: rgb(118, 53, 24);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.unity-progress-bar__progress {
+    background-color: rgb(100, 185, 245);
+}
+
+.button-stats {
+    flex-grow: 0;
+    display: flex;
+    -unity-font: url('project://database/Assets/Fonts/InknutAntiqua-Regular.ttf?fileID=12800000&guid=150c56dd5091f1640aaa683853f8f1ce&type=3#InknutAntiqua-Regular');
+    -unity-font-definition: url('project://database/Assets/Fonts/InknutAntiqua-Regular%20SDF%201.asset?fileID=11400000&guid=dede5090cff236a40bb22be4ba49ff36&type=2#InknutAntiqua-Regular SDF 1');
+    font-size: 30px;
+    color: rgb(118, 53, 24);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Images/upgrade.png?fileID=2800000&guid=f0e148bf57a26174984b110cf707240d&type=3#upgrade');
+    -unity-text-align: middle-center;
+}
+
+.button-stats:hover {
+    background-image: url('project://database/Assets/Images/upgradeHover.png?fileID=2800000&guid=43127f6cd8a57d04cbb92aa704fdb4d3&type=3#upgradeHover');
+}
+
+.button-stats:active {
+    background-image: url('project://database/Assets/Images/upgradeClick.png?fileID=2800000&guid=6a2df5a3e3f9a994b825289ba8a04ea1&type=3#upgradeClick');
+}
+
+.point {
+    width: 10%;
+    background-image: url('project://database/Assets/Images/point.png?fileID=2800000&guid=637f9732a9292494f85fe86a4c675b36&type=3#point');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.control {
+    flex-direction: row;
+    height: 25%;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
